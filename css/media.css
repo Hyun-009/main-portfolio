@@ -1,0 +1,259 @@
+@media screen and (max-width:1290px) {
+    header h1 {
+        font-size: 3.6rem;
+    }
+
+    .navBtn {
+        position: relative;
+        width: 2.6rem;
+        height: 1.8rem;
+        opacity: 1;
+    }
+
+    .menu-list {
+        gap: 4rem;
+        font-size: 2.6rem;
+        display: none;
+    }
+
+    .toggle-menu {
+        gap: 4rem;
+        font-size: 2.6rem;
+    }
+
+    #s0 .tit-wrap {
+        font-size: 10rem;
+        width: 62rem;
+        height: 20rem;
+        letter-spacing: -0.7rem;
+    }
+
+    .tit-wrap .char1 {
+        left: 5rem;
+    }
+
+    .tit-wrap .char2 {
+        right: -11rem;
+    }
+
+    .tit-wrap .char3 {
+        left: 7rem;
+    }
+
+    .tit-wrap .char4 {
+        right: -12rem;
+    }
+
+    #s1 .rel h2 {
+        font-size: 5rem;
+    }
+
+    .marquee .in-wrap span {
+        font-size: 3rem;
+    }
+
+    .skill-wrap li {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    ul.skill-wrap li>span>img {
+        width: 10rem;
+    }
+
+    #s3 .rel h2 {
+        font-size: 5rem;
+    }
+
+    .mid h3 {
+        width: 15rem;
+        height: 5.4rem;
+        font-size: 3rem;
+    }
+
+    .badge {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        font-size: 3rem;
+    }
+
+    .project-lst li a {
+        padding: 3rem 3rem 5rem;
+    }
+
+    .link-box .link {
+        display: none;
+    }
+
+    .tag {
+        font-size: 1.6rem;
+    }
+
+    .footer-top h2 {
+        font-size: 8rem;
+        letter-spacing: .1rem;
+    }
+
+    .footer-bottom h3 {
+        font-size: 6rem;
+    }
+
+    .footer-bottom {
+        gap: 10rem;
+    }
+
+    .footer-bottom ul {
+        gap: 7rem;
+    }
+
+    .footer-bottom ul li a img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .skill-inner {
+        padding-left: 5rem;
+        padding-left: 5rem;
+    }
+
+    skill-wrap li {
+        max-width: 21rem;
+        height: 18rem;
+    }
+
+    .skill-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    ul.skill-wrap li>span>img {
+        width: 10rem;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    header h1 {
+        display: flex;
+        font-size: 2.6rem;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .navBtn {
+        position: relative;
+        opacity: 1;
+    }
+
+    .toggle-menu {
+        font-size: 1.8rem;
+        gap: 2rem;
+    }
+
+    #s0 .tit-wrap {
+        font-size: 6rem;
+    }
+
+    #s0 .tit-wrap {
+        letter-spacing: -.4rem;
+    }
+
+    .tit-wrap .char1 {
+        left: 7rem;
+    }
+
+    .tit-wrap .char2 {
+        right: -14rem;
+    }
+
+    .tit-wrap .char3 {
+        left: 8rem;
+    }
+
+    .tit-wrap .char4 {
+        right: -14rem;
+    }
+
+    #s1 .rel h2 {
+        font-size: 3rem;
+    }
+
+    .marquee .in-wrap span {
+        font-size: 2.4rem;
+    }
+
+    #s2 {
+        height: auto;
+    }
+
+    #s3 .rel h2 {
+        font-size: 3rem;
+        letter-spacing: 3rem;
+    }
+
+    .mid h3 {
+        width: 10rem;
+        height: 3.4rem;
+        font-size: 1.8rem;
+    }
+
+    .tit-wrap.mid {
+        padding-top: 0;
+    }
+
+    .badge {
+        font-size: 1.2rem;
+    }
+
+    .project {
+        font-size: 2rem;
+    }
+
+    .project-lst li {
+        min-height: 15rem;
+        width: 100%;
+    }
+
+    .project-lst li a {
+        padding: 2rem 0rem 3rem;
+    }
+
+    .link-box .link {
+        display: none;
+    }
+
+    .tag {
+        display: none;
+    }
+
+    .footer-top h2 {
+        font-size: 4.2rem;
+        letter-spacing: -.3rem;
+    }
+
+    .footer-bottom {
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .footer-bottom ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-bottom ul li a img {
+        width: 60%;
+    }
+
+    .footer-bottom h3 {
+        font-size: 3rem;
+    }
+}

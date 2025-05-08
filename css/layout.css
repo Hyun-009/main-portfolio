@@ -1,0 +1,623 @@
+header {
+    position: fixed;
+    z-index: 3;
+    top: -110%;
+    width: 100%;
+    color: #fff;
+    transition: top .5s ease-in-out;
+}
+header.loading {
+    top: 0;
+}
+header .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.navBtn {
+    display: block;
+    width: 3.2rem;
+    height: 2.4rem;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navBtn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    top: 50%;
+    left: 0;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.navBtn::before,
+.navBtn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    left: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navBtn::before {
+    top: 0;
+}
+
+.navBtn::after {
+    top: 99%;
+}
+
+
+.menu-list{
+    display: flex;
+    gap: 5rem;
+    transition: all 0.3s;
+    opacity: 1;
+    visibility: visible;
+    font-size: 3rem;
+    font-weight: 200;
+}
+.toggle-menu{
+    position: absolute;
+    right: 0;
+    top: 9rem;
+    display: flex;
+    gap: 5rem;
+    /* flex-direction: column; */
+    font-size: 3rem;
+    font-weight: 200;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.774);
+    backdrop-filter: blur(4px);
+    padding: 3rem;
+
+}
+
+header.tBtn-open {
+    background-color: rgba(0, 0, 0, 0.774);
+    backdrop-filter: blur(4px);
+}
+header.tBtn-open .menu-list {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+header.tBtn-open .navBtn {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+header.sideNav-open .navBtn:after{
+    transform: rotate(45deg);
+    top: 50%;
+
+
+}
+
+header.sideNav-open .navBtn span{
+    transform: translateX(110%);
+    opacity: 0;
+
+
+}
+header.sideNav-open .navBtn::before{
+    transform: rotate(-45deg);
+    top: 50%;
+
+
+}
+header.sideNav-open .toggle-menu{ 
+visibility: visible;
+opacity: 1;
+}
+/* 0 */
+
+#s0 {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#s0 .rel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#s0 .tit-wrap {
+    font-size: 15rem;
+    text-transform: uppercase;
+    width: 78rem;
+    height: 29.6rem;
+    letter-spacing: -.4rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.tit-wrap .char {
+    /* opacity: 0; */
+    /* 처음에는 투명하게 */
+    /* 아래쪽에서 시작 */
+    height: 15rem;
+    overflow: hidden;
+    width: 42rem;
+}
+
+.tit-wrap .char .in-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.tit-wrap .char .in-wrap span {
+    display: block;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.tit-wrap .char1 {
+    position: absolute;
+    top: -10%;
+    left: -5rem;
+}
+
+.tit-wrap .char2 {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+}
+
+.tit-wrap .char3 {
+    position: absolute;
+    top: 35%;
+    left: -1rem;
+}
+
+.tit-wrap .char4 {
+    position: absolute;
+    top: 45%;
+    right: -5rem;
+}
+
+/* 1 */
+section #s1 {
+    height: auto;
+    padding-left: 10rem;
+}
+
+#s1 {
+    background-color: #1F1F1F;
+    padding-bottom: 10rem;
+    position: relative;
+
+}
+#s1 .rel{
+    max-width: none;
+}
+#s1 .rel h2 {
+    color: #fff;
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 2rem;
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    line-height: 5rem;
+    letter-spacing: 5rem;
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 3.4rem;
+    white-space: nowrap;
+}
+
+.marquee .in-wrap span {
+    padding: 1rem 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+
+.marquee2 {
+    border-top: .1rem solid #787878;
+    width: 100%;
+}
+
+.marquee3 {
+    border-top: .1rem solid #787878;
+    width: 100%;
+}
+
+/* 2 */
+
+#s2 {
+    /* padding: 20rem 0; */
+    overflow: hidden;
+    padding: 40rem 0 30rem;
+    background-color: #000;
+    height: 100%;
+}
+
+.skill-inner {
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-inner .skill-wrap li a img {
+    color: #000;
+}
+
+.skill-wrap {
+    display: flex;
+    gap: 5.5rem;
+    width: 10rem;
+    /* 고정 너비 제거 후 JS에서 계산 */
+    will-change: transform;
+    /* 애니메이션 최적화 */
+}
+
+.skill-wrap li {
+    flex: 0 0 26rem;
+    /* 크기 고정 */
+    height: 26rem;
+}
+ul.skill-wrap li>span>img{
+    width: 15rem;
+}
+.skill-wrap li span {
+    display: flex;
+    background-color: #DBFF63;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 3rem;
+}
+
+/* 3 */
+
+/* Section */
+#s3 {
+    padding: 20rem 0;
+    height: auto;
+    background-color: #1f1f1f;
+}
+
+.project-wrap {
+    padding-bottom: 10rem;
+}
+
+#s3 .rel h2 {
+    text-align: center;
+    padding-bottom: 20rem;
+    font-size: 8rem;
+    letter-spacing: 5rem;
+}
+
+.mid h3 {
+    text-align: center;
+    margin-top: 5rem;
+    color: #000;
+    padding: 1rem 0;
+    position: relative;
+    border-radius: 3rem;
+    font-size: 4rem;
+    font-weight: 300;
+    background-color: #DBFF63;
+    width: 21rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+    letter-spacing: -.2rem;
+}
+
+/* Project List */
+.project-lst li {
+    position: sticky;
+    top: 10rem;
+    min-height: 20rem;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+
+.project-lst li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 5rem 8rem;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+
+/* Project List Hover Effect */
+.project-lst li::after {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    background: linear-gradient(0deg, rgb(145, 145, 145) 0%, rgba(0, 212, 255, 0) 100%);
+    opacity: 0.24;
+    content: "";
+    transition: all 0.3s;
+}
+
+
+.project-lst li::before {
+    content: "";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transform-origin: bottom;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.project-lst li .content {
+    height: 0;
+    visibility: hidden;
+    transition: height .3s;
+}
+
+.project-lst li .content .in {
+    margin-top: 5rem;
+    display: flex;
+    transition: opacity .3s .3s;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+
+.project-lst li .content .in .t-wrap {
+    max-width: 50rem;
+}
+
+/* Project List Active State */
+.project-lst li.On::before {
+    background-color: #DBFF63;
+
+    height: 100%;
+}
+
+.project-lst li.On .arr {
+    transform: translateY(-50%) translateX(0%);
+    opacity: 1;
+}
+
+.project-lst li.On .badge {
+    transform: scaleY(0);
+}
+
+.project-lst li.On .project {
+    transform: translateX(20px) skewX(-15deg);
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.project-lst li.On .txt {
+    opacity: 1;
+}
+
+.project-lst li.On .tag {
+    transform: translateX(-1rem);
+    opacity: 0;
+}
+
+.project-lst li.On .link {
+    opacity: 1;
+    transform: translate(2rem, 0);
+}
+
+.project-lst li.On .content {
+    height: auto;
+    visibility: visible;
+}
+
+.project-lst li.On .content .in {
+    opacity: 1;
+}
+
+/* Project Text */
+.project {
+    font-size: 5.5rem;
+    transition: all .3s;
+    font-weight: 600;
+    color: #fcfcfc;
+    margin: 1rem 0;
+    transition: all .3s;
+}
+
+.project-lst .txt {
+    font-size: 1.6rem;
+    max-width: 60%;
+    margin-top: 0.5rem;
+    opacity: 0;
+}
+
+/* Badge */
+.badge {
+    font-size: 2rem;
+    background-color: #fcfcfc;
+    padding: 0 1rem;
+    display: inline-block;
+    color: #1f1f1f;
+    transition: all .3s;
+    border-radius: 3rem;
+}
+
+/* Layout & Positioning */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.right {
+    position: relative;
+    min-width: 40rem;
+    text-align: right;
+}
+
+/* Link & Tag Box */
+.link-box,
+.tag-box {
+    transition: all 0.3s;
+}
+
+.link-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.link-box .link {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    min-width: 11rem;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    transition: all 0.3s;
+    transform: translateY(100%);
+}
+
+.link-box .link:nth-child(2) {
+    transition-delay: 0.05s;
+}
+
+.link-box .link:nth-child(3) {
+    transition-delay: 0.1s;
+}
+
+/* Tag Box */
+.tag-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-30%);
+    overflow: hidden;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0 2rem;
+    border: 0.1rem solid #ccc;
+    line-height: 1.6;
+    font-size: 2rem;
+    border-radius: 10rem;
+    transition: all 0.1s;
+}
+
+/* Arrow */
+.arr {
+    font-size: 6rem;
+    color: #1F1F1F;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    transition: all 0.25s;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 위 아래 공간 자동 분배 */
+}
+
+.footer-top {
+    width: 100%;
+    height: 80rem;  /* 그대로 유지 */
+    position: relative;
+}
+
+.footer-top h2 {
+    font-size: 15rem;
+    font-weight: 600;
+    color: #fff;
+    width: 80rem;
+    height: 30rem;
+    position: absolute;
+    text-align: center;
+    padding-top: 20rem;
+    letter-spacing: -1rem;
+    left: calc(100% - (50% + 40rem));
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50rem;
+    padding-bottom: 16rem;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.6rem;
+}
+
+.footer-bottom ul li a {
+    display: inline-block;
+    width: 10rem;
+    height: 8rem;
+}
+
+.footer-bottom h3 {
+    font-size: 8rem;
+    color: #fff;
+    font-weight: 400;
+}
