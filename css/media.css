@@ -102,6 +102,7 @@
 
     .footer-bottom {
         gap: 10rem;
+        bottom: 30rem;
     }
 
     .footer-bottom ul {
@@ -137,7 +138,7 @@
 
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:630px) {
     header h1 {
         display: flex;
         font-size: 2.6rem;
@@ -240,6 +241,7 @@
 
     .footer-bottom {
         gap: 5rem;
+        bottom: 40rem;
         flex-direction: column;
     }
 
@@ -250,10 +252,10 @@
     }
 
     .footer-bottom ul li a img {
-        width: 60%;
+        margin: 1rem;
     }
 
     .footer-bottom h3 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }

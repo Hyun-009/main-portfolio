@@ -601,6 +601,8 @@ img {
     width: 100%;
     gap: 50rem;
     padding-bottom: 16rem;
+    position: absolute;
+    bottom: 20rem;
 }
 
 .footer-bottom ul {
