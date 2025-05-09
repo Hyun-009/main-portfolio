@@ -46,6 +46,7 @@
 
     #s1 .rel h2 {
         font-size: 5rem;
+        letter-spacing: 4rem;
     }
 
     .marquee .in-wrap span {
@@ -63,6 +64,7 @@
 
     #s3 .rel h2 {
         font-size: 5rem;
+        letter-spacing: 4rem;
     }
 
     .mid h3 {
@@ -184,6 +186,7 @@
 
     #s1 .rel h2 {
         font-size: 3rem;
+        letter-spacing: 2rem;
     }
 
     .marquee .in-wrap span {
