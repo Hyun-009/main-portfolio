@@ -278,8 +278,7 @@ section #s1 {
 .skill-wrap {
     display: flex;
     gap: 5.5rem;
-    width: 10rem;
-    /* 고정 너비 제거 후 JS에서 계산 */
+    width: max-content;
     will-change: transform;
     /* 애니메이션 최적화 */
 }

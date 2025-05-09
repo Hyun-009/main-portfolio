@@ -114,28 +114,28 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .skill-inner {
-        padding-left: 5rem;
-        padding-left: 5rem;
-    }
-
-    skill-wrap li {
-        max-width: 21rem;
-        height: 18rem;
-    }
-
+@media screen and (max-width: 1024px) {
     .skill-wrap {
-        display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;  /* ✅ wrap 가능하게 함 */
     }
 
-    ul.skill-wrap li>span>img {
-        width: 10rem;
+    .skill-wrap li {
+        flex: 0 0 calc(33.33% - 2rem); /* 세 칸으로 나눔, gap 고려 */
+        max-width: 20rem;
+        height: auto;
     }
 
+    .skill-wrap li span {
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    ul.skill-wrap li > span > img {
+        width: 8rem;
+    }
 }
 
 @media screen and (max-width:630px) {
@@ -192,6 +192,25 @@
 
     #s2 {
         height: auto;
+    }
+    .skill-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .skill-wrap li {
+        flex: 0 0 45%; /* 두 칸 */
+    }
+
+    .skill-wrap li span {
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    ul.skill-wrap li > span > img {
+        width: 6.5rem;
     }
 
     #s3 .rel h2 {
