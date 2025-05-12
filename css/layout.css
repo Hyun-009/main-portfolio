@@ -564,6 +564,7 @@ img {
 /* footer */
 .footer {
     position: relative;
+    height:auto;
     min-height: 100vh;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
@@ -571,12 +572,12 @@ img {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 위 아래 공간 자동 분배 */
+    justify-content: space-between;
 }
 
 .footer-top {
     width: 100%;
-    height: 80rem;  /* 그대로 유지 */
+    height: 80rem;
     position: relative;
 }
 
@@ -584,9 +585,9 @@ img {
     font-size: 15rem;
     font-weight: 600;
     color: #fff;
-    width: 80rem;
+    width: auto;
     height: 30rem;
-    position: absolute;
+    position: static;
     text-align: center;
     padding-top: 20rem;
     letter-spacing: -1rem;

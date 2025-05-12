@@ -104,7 +104,6 @@
 
     .footer-bottom {
         gap: 10rem;
-        bottom: 30rem;
     }
 
     .footer-bottom ul {
@@ -121,11 +120,13 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-        width: 100%;  /* ✅ wrap 가능하게 함 */
+        width: 100%;
+        /* ✅ wrap 가능하게 함 */
     }
 
     .skill-wrap li {
-        flex: 0 0 calc(33.33% - 2rem); /* 세 칸으로 나눔, gap 고려 */
+        flex: 0 0 calc(33.33% - 2rem);
+        /* 세 칸으로 나눔, gap 고려 */
         max-width: 20rem;
         height: auto;
     }
@@ -135,7 +136,7 @@
         padding: 2rem;
     }
 
-    ul.skill-wrap li > span > img {
+    ul.skill-wrap li>span>img {
         width: 8rem;
     }
 }
@@ -196,6 +197,7 @@
     #s2 {
         height: auto;
     }
+
     .skill-wrap {
         flex-direction: row;
         flex-wrap: wrap;
@@ -204,7 +206,8 @@
     }
 
     .skill-wrap li {
-        flex: 0 0 45%; /* 두 칸 */
+        flex: 0 0 45%;
+        /* 두 칸 */
     }
 
     .skill-wrap li span {
@@ -212,7 +215,7 @@
         padding: 2rem;
     }
 
-    ul.skill-wrap li > span > img {
+    ul.skill-wrap li>span>img {
         width: 6.5rem;
     }
 
@@ -229,6 +232,10 @@
 
     .tit-wrap.mid {
         padding-top: 0;
+    }
+
+    .right {
+        display: none;
     }
 
     .badge {
@@ -279,5 +286,38 @@
 
     .footer-bottom h3 {
         font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .tit-wrap .char1{
+        left: 9rem;
+    }
+    .tit-wrap .char2 {
+        right: -22rem;
+    }
+    .tit-wrap .char3 {
+        left: 10rem;
+    }
+    .tit-wrap .char4 {
+        right: -23rem;
+    }
+    #s0 .tit-wrap {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .tit-wrap .char1{
+        left: 6rem;
+    }
+    .tit-wrap .char2 {
+        right: -26rem;
+    }
+    .tit-wrap .char3 {
+        left: 6rem;
+    }
+    .tit-wrap .char4 {
+        right: -26rem;
     }
 }
