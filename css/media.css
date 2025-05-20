@@ -1,4 +1,23 @@
+@media screen and (max-width:1600px) {
+    header .rel{
+        padding:1rem 2rem;
+    }
+.rel{
+    padding: 0 2rem;
+}
+#s0 .tit-wrap{
+    transform: scale(.8);
+}
+}
 @media screen and (max-width:1290px) {
+    #wrap>.footer 
+    {
+        min-height: auto;
+        padding: 20rem 0;
+    }
+    .footer-top{
+        height: auto;
+    }
     header h1 {
         font-size: 3.6rem;
     }
@@ -22,27 +41,10 @@
     }
 
     #s0 .tit-wrap {
-        font-size: 10rem;
-        width: 62rem;
-        height: 20rem;
-        letter-spacing: -0.7rem;
+
     }
 
-    .tit-wrap .char1 {
-        left: 5rem;
-    }
 
-    .tit-wrap .char2 {
-        right: -11rem;
-    }
-
-    .tit-wrap .char3 {
-        left: 7rem;
-    }
-
-    .tit-wrap .char4 {
-        right: -12rem;
-    }
 
     #s1 .rel h2 {
         font-size: 5rem;
@@ -116,6 +118,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .tit-wrap.mid{
+        padding: 15rem 2rem 6rem;
+    }
+
+    .project-lst li{
+        padding-left: 2rem;
+    }
+    #s0 .tit-wrap{
+    transform: scale(.7);
+}
     .skill-wrap {
         flex-wrap: wrap;
         justify-content: center;
@@ -141,7 +153,52 @@
     }
 }
 
+@media screen and (max-width:830px) {
+
+
+    #s0 .tit-wrap{
+        width:55rem;
+        font-size: 10rem;
+        line-height: 1;
+        height: 20rem;
+        transform: scale(1);
+    }
+    .tit-wrap .char{
+        height: 50%;
+        width: 60%;
+        /* width: auto; */
+    }
+    .tit-wrap .char1{
+        left: 0;
+        top: -10%;
+    }
+
+    .tit-wrap .char2{
+        right: auto;
+        left: 50%;
+    }
+    .tit-wrap .char3{
+        left: 0;
+        bottom: 0;
+    }
+    .tit-wrap .char4{
+        right: auto;
+        left: 50%;
+        bottom: 0;
+    }
+    .tit-wrap .char .in-wrap {
+        position: static;
+    }
+}
+@media screen and (max-width:730px) {
+    #s0 .tit-wrap{
+        width: 45rem;
+        font-size: 8rem;
+        height: 18rem;
+    }
+}
 @media screen and (max-width:630px) {
+
     header h1 {
         display: flex;
         font-size: 2.6rem;
@@ -161,29 +218,6 @@
         gap: 2rem;
     }
 
-    #s0 .tit-wrap {
-        font-size: 6rem;
-    }
-
-    #s0 .tit-wrap {
-        letter-spacing: -.4rem;
-    }
-
-    .tit-wrap .char1 {
-        left: 7rem;
-    }
-
-    .tit-wrap .char2 {
-        right: -14rem;
-    }
-
-    .tit-wrap .char3 {
-        left: 8rem;
-    }
-
-    .tit-wrap .char4 {
-        right: -14rem;
-    }
 
     #s1 .rel h2 {
         font-size: 3rem;
@@ -269,9 +303,8 @@
     }
 
     .footer-bottom {
-        gap: 5rem;
-        bottom: 40rem;
         flex-direction: column;
+        position: static;
     }
 
     .footer-bottom ul {
@@ -290,34 +323,13 @@
 }
 
 @media screen and (max-width:420px) {
-    .tit-wrap .char1{
-        left: 9rem;
+        #s0 .tit-wrap{
+        width: 30rem;
+        font-size: 6rem;
+        height: 12rem;
     }
-    .tit-wrap .char2 {
-        right: -22rem;
-    }
-    .tit-wrap .char3 {
-        left: 10rem;
-    }
-    .tit-wrap .char4 {
-        right: -23rem;
-    }
-    #s0 .tit-wrap {
-        font-size: 4rem;
-    }
+
 }
 
 @media screen and (max-width:320px) {
-    .tit-wrap .char1{
-        left: 6rem;
-    }
-    .tit-wrap .char2 {
-        right: -26rem;
-    }
-    .tit-wrap .char3 {
-        left: 6rem;
-    }
-    .tit-wrap .char4 {
-        right: -26rem;
-    }
 }
